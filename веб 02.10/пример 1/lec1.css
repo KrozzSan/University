@@ -1,0 +1,9 @@
+.horizontal-menu {
+    list-style: none;
+}
+
+.horizontal-menu li {
+    float: none;
+    margin-right: 20px;
+}
+
