@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey form.</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="name" id="name-label">Surname:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your surname" required>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="number" id="number-label">Number:</label>
+        <input type="number" id="number" name="number" placeholder="Enter a number" min="1" max="100" required>
+
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown" name="dropdown">
+            <option value="option1">Student</option>
+            <option value="option2">Full time job</option>
+            <option value="option1">Prefer not to say</option>
+            <option value="option2">Full time learner</option>
+        </select>
+
+        <label>Why are you applying to us?</label>
+        <textarea id="comments" name="comments" placeholder="Additional comments"></textarea>
+
+        <fieldset>
+            <legend>In what language did you study at the university?</legend>
+            <input type="radio" id="radio1" name="radio-group" value="radioOption1">
+            <label for="radio1">Russian</label>
+
+            <input type="radio" id="radio2" name="radio-group" value="radioOption2">
+            <label for="radio2">English</label>
+            <input type="radio" id="radio2" name="radio-group" value="radioOption2">
+            <label for="radio2">Other</label>
+        </fieldset>
+        <br>
+        <label>What programming language do you know?</label>
+        <br>
+        <input type="checkbox" id="checkbox1" name="checkbox-group" value="checkboxOption1">
+        <label for="checkbox1">Python</label>
+
+        <input type="checkbox" id="checkbox2" name="checkbox-group" value="checkboxOption2">
+        <label for="checkbox2">Java</label>
+        <input type="checkbox" id="checkbox1" name="checkbox-group" value="checkboxOption1">
+        <label for="checkbox1">Java Script</label>
+
+        <input type="checkbox" id="checkbox2" name="checkbox-group" value="checkboxOption2">
+        <label for="checkbox2">Golang </label>
+        <br>
+        <br>
+        <label>Any comments or suggestions?</label>
+        <textarea id="comments" name="comments" placeholder="Additional comments"></textarea>
+
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
